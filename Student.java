@@ -7,7 +7,11 @@ public class Student {
     private ReportCard reportCard;
     private static int numberOfStudents;
 
-    public Student (String){
+    public Student (String name){
+        studentID=numberOfStudents+1;
+        numberOfStudents+=1;
+        this.name = name;
+        this.reportCard = new ReportCard();
 
     }
 
@@ -23,5 +27,5 @@ public class Student {
         return reportCard;
     }
 
-
+g
 }
