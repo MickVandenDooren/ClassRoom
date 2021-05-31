@@ -45,10 +45,10 @@ public class ClassRoom {
 
     public double getClassAverageGrade(){
         double classAverage=0;
-
         for (Student student : students) {
-            classAverage+= getReportCard;
+            classAverage+= getAverageGrade(student);
         }
-
+        return classAverage;
     }
+
 }
